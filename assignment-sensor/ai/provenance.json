@@ -1,0 +1,6 @@
+{
+  "tool": "ChatGPT",
+  "model": "GPT-5 Thinking mini",
+  "date_range": "2025-09-26 to 2025-09-28",
+  "notes": "Used ChatGPT to generate initial code skeletons, refine timestamp formatting, and draft README & unit file. Manual edits applied for signal safety and line buffering."
+}

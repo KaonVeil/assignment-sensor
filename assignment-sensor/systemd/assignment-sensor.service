@@ -1,0 +1,16 @@
+[Unit]
+Description=Assignment: Mock sensor logger
+After=network.target multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/assignment-sensor --interval 5 --logfile /tmp/assignment_sensor.log
+# Reinicio automático en fallo; opcional pero recomendado
+Restart=on-failure
+RestartSec=2
+# Si quieres ejecutar como un usuario no-root, descomenta y crea el usuario con permisos:
+# User=someuser
+
+[Install]
+WantedBy=multi-user.target
+
